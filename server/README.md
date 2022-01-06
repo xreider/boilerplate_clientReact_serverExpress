@@ -1,6 +1,6 @@
 ----------------------------- some tips -----------------------------
 
-"scripts": {
+"scripts": {  
 "dev": "cross-env NODE_ENV=development nodemon --exec ts-node -- -r tsconfig-paths/register src/server/index.ts",  
 "build": "rimraf build & tsc",  
 "start": "cross-env NODE_ENV=production node -r ts-node/register/transpile-only -r tsconfig-paths/register build/server/index.js"  
