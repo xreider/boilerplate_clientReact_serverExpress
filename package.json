@@ -11,7 +11,7 @@
     "start-all": "concurrently yarn:start:*",
     "inst:client": "cd client & rimraf node_modules & yarn install",
     "inst:server": "cd server & rimraf node_modules & yarn install",
-    "inst-all": "concurrently \"yarn install\" \"yarn:inst:*\""
+    "inst-all": "yarn install & concurrently yarn:inst:*"
   },
   "dependencies": {
     "concurrently": "^7.0.0"
